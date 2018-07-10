@@ -1,0 +1,35 @@
+*{margin: 0;
+padding: 0;}
+body
+{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.box
+{
+  position: absolute;
+  top: 20%;
+  left: 48%;
+	width: 100px;
+	height: 100px;
+	background: #CDAAEB;
+  border-radius: 50%;
+  border: 15px solid #E5D4F9;
+  box-shadow: 7px 7px 32px -12px rgba(0,0,0,0.75);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30pt; 
+  line-height: 100px;
+  overflow: hidden;
+}
+.loader
+{
+  animation: load 15s steps(10, end) infinite;
+}
+
+@keyframes load {
+
+  100% {
+    transform: translateY(-1000px);
+  }
+}
